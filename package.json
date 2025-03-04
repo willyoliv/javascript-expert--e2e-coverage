@@ -1,0 +1,23 @@
+{
+  "name": "javascript-expert--e2e-coverage",
+  "version": "1.0.0",
+  "description": "Repository for learning end-to-end testing, exploring how to validate user flows and ensure application reliability.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/api.js",
+    "test:dev": "npx mocha -w src/*.test.js",
+    "test": "npx mocha src/*.test.js",
+    "test:cov": "npx nyc npx mocha src/*.test.js"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "keywords": [],
+  "author": "Willy Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^11.1.0",
+    "nyc": "^17.1.0",
+    "supertest": "^7.0.0"
+  }
+}
